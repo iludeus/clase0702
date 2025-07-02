@@ -2,6 +2,7 @@ import streamlit as st
 from backend import calcular_potencia
 
 st.title("Calculadora de Potencia Eléctrica")
+st.subheader("Complete con los datos a calcular")
 
 voltaje = st.number_input("Voltaje (V)", min_value=0.0, value=220.0)
 corriente = st.number_input("Corriente (A)", min_value=0.0, value=5.0)
